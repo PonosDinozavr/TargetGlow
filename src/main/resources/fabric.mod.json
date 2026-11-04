@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "targetglow",
+  "version": "${version}",
+  "name": "TargetGlow",
+  "description": "Smoothly highlights screen edges with a glowing vignette when aiming at another player or mob within attack reach.",
+  "authors": [
+    "ponos_dinozavr"
+  ],
+  "contact": {
+    "homepage": "https://github.com/PonosDinozavr/TargetGlow",
+    "sources": "https://github.com/PonosDinozavr/TargetGlow",
+    "issues": "https://github.com/PonosDinozavr/TargetGlow/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/targetglow/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.frogstudio.targetglow.TargetGlowClient"
+    ],
+    "modmenu": [
+      "com.frogstudio.targetglow.gui.TargetGlowModMenu"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
